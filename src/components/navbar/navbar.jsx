@@ -157,7 +157,7 @@ const Navbar = () => {
           className="absolute top-4 right-4 text-xl cursor-pointer"
           onClick={toggleMobileMenu}
         >
-          <FontAwesomeIcon icon={faClose} />
+          <FontAwesomeIcon icon={faClose} className="text-3xl" />
         </div>
 
         <ul className="mt-10 flex flex-col gap-4">
