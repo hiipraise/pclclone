@@ -4,7 +4,7 @@ import HomeSlideupP from "../hometext/homeslideupP";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay, faPause } from "@fortawesome/free-solid-svg-icons";
 
-const AdvancedSlideshow = () => {
+export default function AdvancedSlideshow() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [direction, setDirection] = useState("");
   const [animating, setAnimating] = useState(false);
@@ -149,6 +149,4 @@ const AdvancedSlideshow = () => {
       </div>
     </div>
   );
-};
-
-export default AdvancedSlideshow;
+}
