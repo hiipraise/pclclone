@@ -10,9 +10,9 @@ const WhatWeBuild = () => {
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
   };
   return (
-    <section ref={ref} className="h-full bg-[#fff] flex items-center p-[5vw]">
+    <section ref={ref} className="h-full bg-[#fff] flex items-center sm:p-[5vw] px-[5vw] py-20">
       <div className="flex gap-[4vmin] justify-center">
-        <div className="h-[2px] w-20 bg-black flex"></div>
+        <div className="h-[2px] hidden w-20 bg-black sm:flex"></div>
         <div className="space-y-24">
           <div>
             <motion.p

@@ -1,24 +1,12 @@
 // components/sections/WhoWeAreSection.jsx
 import { motion } from "framer-motion";
+import { paragraphs, stats } from "../../data/pcldata";
 
 const WhoWeAreSection = () => {
-  const paragraphs = [
-    "The flexibility to mobilize the right people to deliver unique solutions, an unwavering focus to delivering value to your business bottom line; and the capability to leverage innovation to meet emerging challenges and keep you at the fore. This is PCL.",
-    "As a company that is 100 percent employee-owned, we collaborate and innovate to help our partners thrive. Our culture of ownership drives your success",
-    "Whether you are in the buildings, civil, or industrial market, partnering with PCL means you're gaining a proven, reliable and trusted full-service partner with a mobile network of more than 5,200 employees, experts and seasoned professionals across Canada, the United States, Australia and the Caribbean. ",
-    "From advanced digital construction technologies to innovative offsite modular manufacturing, to the cutting edge of sustainable construction, we lead the industry as we have for more than 100 years. We leverage the expertise from this vast experience to help our clients and partners build lasting legacies.",
-  ];
-
-  const stats = [
-    { value: "119", label: "years in Operation" },
-    { value: "$11.3B+", label: "Annual Construction Volume" },
-    { value: "#10", label: "Rank in ENK's list of Top $400 Contractors" },
-  ];
-
   return (
-    <section className="h-full bg-white flex items-center p-[5vw]">
+    <section className="h-full bg-white flex items-center sm:p-[5vw] px-[5vw] py-20">
       <div className="flex gap-[4vmin] justify-center">
-        <div className="h-[2px] w-20 bg-black flex" />
+        <div className="h-[2px] hidden sm:flex w-20 bg-black" />
         <div className="space-y-[5vmin]">
           <div className="space-y-3">
             <motion.p className="uppercase font-light text-xl">

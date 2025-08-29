@@ -10,6 +10,7 @@ import {
 
 import NarrowDropdown from "../dropdowncontent/narrowdropdown";
 import WideDropdown from "../dropdowncontent/widedropdown";
+import { dropdownItems } from "../../data/pcldata2";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -37,13 +38,6 @@ const Navbar = () => {
 
   const toggleDropdown = (dropdownName) => {
     setOpenDropdown(openDropdown === dropdownName ? null : dropdownName);
-  };
-
-  const dropdownItems = {
-    Sectors: ["Technology", "Healthcare", "Finance", "Education"],
-    Services: ["Consulting", "Development", "Design", "Support"],
-    "Who We Are": ["Our Team", "Our Mission", "Our Values"],
-    Career: ["Open Positions", "Benefits", "Culture"],
   };
 
   const renderNavItem = (text, hasDropdown) => {

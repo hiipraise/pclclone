@@ -10,7 +10,7 @@ const WorkTogether = () => {
   };
   return (
     <section ref={ref} className="h-full bg-[#f9f9f9] flex items-center">
-      <div className="p-[5vw] space-y-7">
+      <div className="sm:p-[5vw] px-[5vw] py-20 space-y-7">
         <motion.p
           variants={fadeUp}
           initial="hidden"

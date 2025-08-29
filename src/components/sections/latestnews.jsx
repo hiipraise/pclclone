@@ -2,82 +2,7 @@ import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
-
-const insights = [
-  {
-    title: "PCL Construction Joins SickKids in the Fight for Every Birthday",
-    category: "PRESS RELEASE",
-    date: "May 14, 2025",
-    location: "Toronto Buildings and Civil",
-    image:
-      "https://www.pcl.com/content/dam/news-release-images/DSC07895-Enhanced-NR_V2.jpg",
-  },
-  {
-    title: "PCL Earns Key Nuclear Certifications",
-    category: "PRESS RELEASE",
-    location: "Toronto Buildings and Civil",
-    date: "Apr 22, 2025",
-    image:
-      "https://www.pcl.com/content/dam/news-release-images/24UW-PlanePull-PCL(2)-min%20(2).jpg",
-  },
-  {
-    title: "How to Build a People-First Construction Safety Program",
-    category: "AWARDS",
-    date: "Apr 22, 2025",
-    location: "North America Headquarters",
-    image:
-      "https://www.pcl.com/content/dam/news-release-images/25_Top-100_GREENEST_Newsroom_V1_(1920x1080)_EN%20(2)-min.jpg",
-  },
-  {
-    title: "The Future of Sustainable Buildings",
-    category: "PRESS RELEASE",
-    date: "April 29, 2025",
-    location: "North America Headquarters",
-    image:
-      "https://www.pcl.com/content/dam/news-release-images/United%20Way.jpg",
-  },
-  {
-    title:
-      "Minimal Disruption, Maximum Care: Prioritizing Patients while Building Hospitals",
-    category: "PRESS RELEASE",
-    location: "North America Headquarters",
-    date: "May 15, 2025",
-    image:
-      "https://www.pcl.com/content/dam/news-release-images/Andrew%20Moles.jpg",
-  },
-  {
-    title: "PCL Earns Key Nuclear Certifications",
-    category: "AWARDS",
-    date: "May 7, 2025",
-    location: "North America Headquarters",
-    image:
-      "https://www.pcl.com/content/dam/news-release-images/CCSC-Logo-01.jpg",
-  },
-  {
-    title: "How to Build a People-First Construction Safety Program",
-    category: "PRESS RELEASE",
-    date: "May 7, 2025",
-    location: "Toronto Buildings and Civil",
-    image:
-      "https://www.pcl.com/content/dam/news-release-images/Safety%20Award.jpg",
-  },
-  {
-    title: "The Future of Sustainable Buildings",
-    category: "PRESS RELEASE",
-    date: "April 29, 2025",
-    location: "Toronto Buildings and Civil",
-    image:
-      "https://www.pcl.com/content/dam/news-release-images/ARTIST%20RENDERING%20QEII%20HIEP%20(Mar%2027%202024)%20FINAL%20(1).jpg",
-  },
-  {
-    title: "The Future of Sustainable Buildings",
-    category: "AWARDS",
-    date: "April 29, 2025",
-    location: "North America Headquarters",
-    image:
-      "https://www.pcl.com/content/dam/news-release-images/Alberta's%20Top%20Employers%202025%20wide.jpg",
-  },
-];
+import { insights } from "../../data/pcldata2";
 
 // Helper: Chunk array into slides
 const chunkArray = (arr, size) =>
@@ -113,7 +38,7 @@ export default function LatestNews() {
   };
 
   return (
-    <section className="max-w-screen-xl mx-auto p-[5vw] space-y-7">
+    <section className="max-w-screen-xl mx-auto space-y-7">
       {/* Header & Desktop Controls */}
       <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between w-full">
         <h2 className="text-2xl md:text-4xl font-bold">Latest News</h2>

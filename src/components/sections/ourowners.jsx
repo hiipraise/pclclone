@@ -13,11 +13,11 @@ const OurOwners = () => {
   return (
     <section
       ref={ref}
-      className="h-full w-full bg-[#fff] flex items-center p-[5vw]"
+      className="h-full w-full bg-[#fff] flex items-center sm:p-[5vw] px-[5vw] py-20"
     >
       <div className="space-y-24">
         <div className="flex gap-[4vmin] justify-center">
-          <div className="h-[2px] w-20 bg-black flex"></div>
+          <div className="h-[2px] hidden w-20 bg-black sm:flex"></div>
           <div className="flex flex-wrap md:flex-nowrap gap-[5vmin]">
             <div className="flex flex-col space-y-3 w-full">
               <motion.p

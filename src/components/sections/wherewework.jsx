@@ -11,11 +11,11 @@ const WhereWework = () => {
   };
   return <section
         ref={ref}
-        className="h-full bg-[#36383d] flex items-center p-[5vw]"
+        className="h-full bg-[#36383d] flex items-center sm:p-[5vw] px-[5vw] py-20"
       >
         <div className="flex gap-[4vmin] justify-center">
-          <div className="h-[2px] w-20 bg-white flex"></div>
-          <div className="space-y-12">
+          <div className="h-[2px] hidden sm:flex w-20 bg-white"></div>
+          <div className="space-y-12 flex justify-center items-end flex-wrap">
             <div className="flex flex-wrap md:flex-nowrap gap-[3vmin]">
               <div className="space-y-3">
                 <motion.p

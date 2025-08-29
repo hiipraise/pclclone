@@ -1,34 +1,8 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import TriciaImg from "../../assets/image/Gibney_Tricia_Saskatoon.jpg";
-import MendesImg from "../../assets/image/Mendes_Pedro_Ind_Hori.jpg";
-import ChiassonImg from "../../assets/image/Chiasson_Marc_CGY_2-51.jpg";
 import { useScrollAnimation } from "../../hooks/useScrollAnimation";
 import { motion, AnimatePresence } from "framer-motion";
-
-const people = [
-  {
-    name: "Tricia Pollock",
-    role: "HSE Manager",
-    description:
-      "Tricia loves the rattle and hum of a construction site and seeing the inner workings of a job site. She prides herself on her people skills, knowing that workers can sit down with her to talk about any concerns. At the end of the day, Tricia's goal is to send everyone home safely every day.",
-    image: TriciaImg,
-  },
-  {
-    name: "Marc Chiasson",
-    role: "Vice President, Civil Infrastructure",
-    description:
-      "Marc provides strategic assistance on major civil projects across Canada. He has been an integral part of growing our civil expertise in transportation and water and wastewater infrastructure. His 35 years of experience in estimating, risk management and operations a wealth of knowledge to deliver quality projects for our clients.",
-    image: ChiassonImg,
-  },
-  {
-    name: "Pedro Mendes",
-    role: "Senior Superintendent",
-    description:
-      "Pedro is an expert in welding and pipefitting with more than 28 years of experience in his trade. Over the years, he's enjoyed working with great people who share his work philosophies and who he can put his full confidence in. Pedro likes knowing the structures he's worked on will be around for many years to come.",
-    image: MendesImg,
-  },
-];
+import { people } from "../../data/pcldata2";
 
 const variants = {
   enter: { opacity: 0, y: 30 },
@@ -37,9 +11,9 @@ const variants = {
 };
 
 export default function Carousel() {
-  const { ref, controls } = useScrollAnimation();
+  const { ref } = useScrollAnimation();
   const [index, setIndex] = useState(0);
-  const [direction, setDirection] = useState(0);
+  const [setDirection] = useState(0);
 
   const paginate = (newDirection) => {
     if (

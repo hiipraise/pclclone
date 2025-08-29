@@ -12,10 +12,10 @@ const WhatWedo = () => {
   return (
     <section
         ref={ref}
-        className="h-full bg-[#f9f9f9] flex items-center p-[5vw]"
+        className="h-full bg-[#f9f9f9] flex items-center sm:p-[5vw] px-[5vw] py-20"
       >
         <div className="flex gap-[4vmin] justify-center">
-          <div className="h-[2px] w-20 bg-black flex"></div>
+          <div className="h-[2px] hidden w-20 bg-black sm:flex"></div>
           <div className="space-y-14">
             <div className="space-y-3">
               <motion.p

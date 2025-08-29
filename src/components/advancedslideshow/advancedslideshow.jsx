@@ -57,7 +57,7 @@ export default function AdvancedSlideshow() {
   }, [currentIndex, isPlaying]);
 
   return (
-    <div className="relative w-full h-[400px] sm:h-screen overflow-hidden bg-black font-sans object-cover bg-center bg-cover">
+    <div className="relative w-full h-screen overflow-hidden bg-black font-sans object-cover bg-center bg-cover">
       {slides.map((slide, index) => (
         <div
           key={index}

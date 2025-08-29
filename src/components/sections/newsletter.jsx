@@ -14,7 +14,7 @@ const NewsLetter = () => {
       className="bg-green-950 h-full flex items-center
       "
     >
-      <div className="p-[5vw] flex flex-wrap gap-10 sm:gap-[4vmin] md:flex-nowrap">
+      <div className="sm:p-[5vw] px-[5vw] py-20 flex flex-wrap gap-10 sm:gap-[4vmin] md:flex-nowrap">
         <div className="space-y-5">
           <motion.p
             variants={fadeUp}

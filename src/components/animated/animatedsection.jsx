@@ -75,7 +75,7 @@ const AnimatedSection = () => {
         )}
       </ul>
 
-      <div className="flex flex-wrap md:flex-nowrap justify-center space-y-8 md:space-x-36">
+      <div className="flex flex-wrap md:flex-nowrap justify-center items-center space-y-8 md:space-x-36">
         <img
           src="https://www.pcl.com/content/dam/maps/Maps_Canada_US_Aus-2024-07-10_Canada.png"
           alt=""

@@ -2,74 +2,7 @@ import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
-
-const insights = [
-  {
-    title:
-      "Minimal Disruption, Maximum Care: Prioritizing Patients while Building Hospitals",
-    category: "Market Insight",
-    date: "May 15, 2025",
-    image:
-      "https://www.pcl.com/content/dam/insights-images/Prioritizing%20Patients%201.jpg",
-  },
-  {
-    title: "PCL Earns Key Nuclear Certifications",
-    category: "Market Insight",
-    date: "May 7, 2025",
-    image:
-      "https://www.pcl.com/content/dam/insights-images/Nuclear%20Ntype%20stamp.jpg",
-  },
-  {
-    title: "How to Build a People-First Construction Safety Program",
-    category: "Culture",
-    date: "May 7, 2025",
-    image:
-      "https://www.pcl.com/content/dam/insights-images/People-First%20Construction%20Safety%20Program%201.jpg",
-  },
-  {
-    title: "The Future of Sustainable Buildings",
-    category: "Sustainability",
-    date: "April 29, 2025",
-    image:
-      "https://www.pcl.com/content/dam/insights-images/Solution%20to%20Prevent%20Costly%20Water%20Damage%201.jpg",
-  },
-  {
-    title:
-      "Minimal Disruption, Maximum Care: Prioritizing Patients while Building Hospitals",
-    category: "Market Insight",
-    date: "May 15, 2025",
-    image:
-      "https://www.pcl.com/content/dam/insights-images/Digital%20Twin%20in%20Manufacturing%201.jpg",
-  },
-  {
-    title: "PCL Earns Key Nuclear Certifications",
-    category: "Market Insight",
-    date: "May 7, 2025",
-    image:
-      "https://www.pcl.com/content/dam/insights-images/Danny%20Evans%20ENR%20Banner-1.jpg",
-  },
-  {
-    title: "How to Build a People-First Construction Safety Program",
-    category: "Culture",
-    date: "May 7, 2025",
-    image:
-      "https://www.pcl.com/content/dam/insights-images/Building%20Polytechnics%201.jpg",
-  },
-  {
-    title: "The Future of Sustainable Buildings",
-    category: "Sustainability",
-    date: "April 29, 2025",
-    image:
-      "https://www.pcl.com/content/dam/insights-images/Virtual%20Reality%20Training%201.jpg",
-  },
-  {
-    title: "The Future of Sustainable Buildings",
-    category: "Sustainability",
-    date: "April 29, 2025",
-    image:
-      "https://www.pcl.com/content/dam/insights-images/WIC-2025-Insights-Article-Header-New.jpg",
-  },
-];
+import { insights } from "../../data/pcldata";
 
 // Helper: Chunk array into slides
 const chunkArray = (arr, size) =>
@@ -105,7 +38,7 @@ export default function FeaturedInsights() {
   };
 
   return (
-    <section className="max-w-screen-xl mx-auto p-[5vw] space-y-7">
+    <section className="max-w-screen-xl mx-auto space-y-7">
       {/* Header & Desktop Controls */}
       <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between w-full">
         <h2 className="text-2xl md:text-4xl font-bold">Featured Insights</h2>
