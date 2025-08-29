@@ -13,7 +13,7 @@ const variants = {
 export default function Carousel() {
   const { ref } = useScrollAnimation();
   const [index, setIndex] = useState(0);
-  const [setDirection] = useState(0);
+  const [direction, setDirection] = useState(0);
 
   const paginate = (newDirection) => {
     if (
